@@ -1,4 +1,4 @@
-library)imageRy)
+library(imageRy)
 library(terra)
 library(rasterdiv)
 
@@ -11,4 +11,9 @@ renstack <- c(ren3[[1]], ren3[[2]], ren3[[3]], ren3[[4]])
 plot(renstack)
 writeRaster(renstack, "ren3.tif")
 
-rao3 <- paRao(sent, window=3, alpha=seq(0,6,2)) 
+# rao3 <- paRao(sent, window=3, alpha=seq(0,6,2)) 
+rao3 <- paRao(sent, window=3, alpha=2) 
+
+#---
+
+
