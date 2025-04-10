@@ -14,6 +14,10 @@ writeRaster(renstack, "ren3.tif")
 # rao3 <- paRao(sent, window=3, alpha=seq(0,6,2)) 
 rao3 <- paRao(sent, window=3, alpha=2) 
 
+# 32 core!
+rao3 <- paRao(sent, window=3, alpha=2, np=32)
+
+
 #---
 
 
